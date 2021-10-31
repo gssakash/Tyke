@@ -30,9 +30,11 @@ function Header() {
         onSetOpen={toggleFunction}
         styles={{ sidebar: { background: "white" } }}
       >
-        <button className="sidebar-btn" onClick={() => toggleFunction(true)}>Open sidebar</button>
+        <button className="sidebar-btn" onClick={() => toggleFunction(true)}>
+          Open sidebar
+        </button>
       </Sidebar>
-      -
+      <h2 id="tyke-heading">Tyke</h2>
       <img
         className="header__logo"
         src="https://logodix.com/logo/15262.png"
