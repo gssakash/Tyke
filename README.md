@@ -18,6 +18,9 @@
 * Run `npm install`.
 
 ## Features
+* Personalized feel (NFT) - Swiping cards provides them the same feeling as browsing through the closet, giving them a personal touch.
+* Achievement - The XP points offer users a sense of accomplishment, which keeps them engaged in the application indefinitely.
+* Fun - This entire process is enjoyable, which differs from the conventional method of shopping.
 
  <h2><strong>Languages and Tools used</strong></h2>
   <img src="https://img.icons8.com/color/2x/react-native.png"> <img src="https://img.icons8.com/color/2x/javascript.png">
