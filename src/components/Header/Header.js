@@ -22,7 +22,10 @@ function Header() {
       <h2 id="tyke-heading">Tyke</h2>
       <img
         className="header__logo"
-        src="https://logodix.com/logo/15262.png"
+        // src="https://logodix.com/logo/15262.png"
+        src="https://cdn2.iconfinder.com/data/icons/e-commerce-icons-2/256/Ecommerce_Icons_Rose_Color-11-512.png"
+        height="200px"
+        width="100px"
         alt="Tyke"
       />
     </div>

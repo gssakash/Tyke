@@ -53,7 +53,9 @@ function TinderCards() {
           <div id="sidebar-details">
             <br />
             <h3 className="sidebar-header">No. Of Coins Collected</h3>
-            <h5>You have {count} 💰</h5>
+            <h5>
+              You have {count} 💰 {count > 1 ? "coins" : "coin"}
+            </h5>
           </div>
         }
         open={toggle}
