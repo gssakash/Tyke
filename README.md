@@ -8,6 +8,9 @@
   <img src="https://cdn2.iconfinder.com/data/icons/e-commerce-icons-2/256/Ecommerce_Icons_Rose_Color-11-512.png" height="200px"/>
 </p>
 
-
+## Setup of the Project
+* Clone this repository.
+* cd `Tyke`.
+* Run `npm install`.
 
 
