@@ -8,7 +8,7 @@ function TinderCards() {
   useEffect(() => {
     async function fetchData() {
       const req = await axios.get(
-        "https://tinder-clone-backend-men.herokuapp.com/tinder/cards"
+        "https://tykeapi.pythonanywhere.com/api/Apis/"
       );
       setPeople(req.data);
     }

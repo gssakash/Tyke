@@ -14,3 +14,21 @@
 .header__icon {
     padding: 5px;
 }
+
+#sidebar-details{
+    padding-left:30px;
+    padding-right:40px;
+}
+
+.sidebar-btn {
+    margin-top:20px;
+    margin-left:25px;
+    padding:20px;
+    background-color:brown;
+    color:white;
+    font-weight:600;
+    outline:none;
+    border:0;
+    border-radius:10px;
+    text-transform: uppercase;
+}
