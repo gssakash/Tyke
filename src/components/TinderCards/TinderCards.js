@@ -2,12 +2,19 @@ import React, { useState, useEffect } from "react";
 import "./TinderCards.css";
 import TinderCard from "react-tinder-card";
 import { ToastContainer, toast } from "react-toastify";
+import Sidebar from "react-sidebar";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 
 function TinderCards() {
+  let [count, setCount] = useState(0);
   const [people, setPeople] = useState([]);
-  const [count, setCount] = useState(0);
+  const [toggle, changeToggle] = useState(false);
+
+  const toggleFunction = () => {
+    changeToggle((toggle) => !toggle);
+  };
+
   useEffect(() => {
     async function fetchData() {
       const req = await axios.get(
@@ -19,7 +26,9 @@ function TinderCards() {
   }, []);
 
   const swiped = (direction, nameToDelete) => {
-    setCount((prev) => (prev = prev + 1));
+    setCount((prev) => {
+      return prev + 1;
+    });
     console.log("Me Called");
     toast("You have Gained a 💰 Coin!", {
       position: "bottom-center",
@@ -30,7 +39,6 @@ function TinderCards() {
       draggable: true,
       progress: undefined
     });
-    console.log(count);
   };
 
   const outOfFrame = (name) => {
@@ -40,6 +48,22 @@ function TinderCards() {
   return (
     //  onDragCapture={notify}
     <div className="tinderCards">
+      <Sidebar
+        sidebar={
+          <div id="sidebar-details">
+            <br />
+            <h3 className="sidebar-header">No. Of Coins Collected</h3>
+            <h5>You have {count} 💰</h5>
+          </div>
+        }
+        open={toggle}
+        onSetOpen={toggleFunction}
+        styles={{ sidebar: { background: "white" } }}
+      >
+        <button className="sidebar-btn" onClick={() => toggleFunction(true)}>
+          Open sidebar
+        </button>
+      </Sidebar>
       <div className="tinderCards__cardContainer">
         {people.map((person) => (
           <TinderCard

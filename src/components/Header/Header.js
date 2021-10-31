@@ -18,22 +18,7 @@ function Header() {
         <PersonIcon fontSize="large" className="header__icon" />
       </IconButton> */}
       <br />
-      <Sidebar
-        sidebar={
-          <div id="sidebar-details">
-            <br />
-            <h3 className="sidebar-header">No. Of Coins Collected</h3>
-            {/* <h5>You have {coinsCollected} 💰</h5> */}
-          </div>
-        }
-        open={toggle}
-        onSetOpen={toggleFunction}
-        styles={{ sidebar: { background: "white" } }}
-      >
-        <button className="sidebar-btn" onClick={() => toggleFunction(true)}>
-          Open sidebar
-        </button>
-      </Sidebar>
+      {/* Sidebar */}
       <h2 id="tyke-heading">Tyke</h2>
       <img
         className="header__logo"
